@@ -8,7 +8,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        MyDate myDate = new MyDate();
+        String dateInput;
+        int counter = 1;
+
+        System.out.print("Geben Sie das "+ counter +". Datum in der Form <Tag>.<Monat>.<Jahr> ein: ");
+        dateInput = scanner.nextLine();
+
+        MyDate myDate = new MyDate(dateInput);
+
+        while (!(dateInput.equals("quit"))) {
+
+
+
+        }
+
+
 
     }
 }

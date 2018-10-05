@@ -8,25 +8,39 @@ import java.util.Scanner;
  *   zur Ermittlung des Wochentages: https://de.wikipedia.org/wiki/Wochentagsberechnung#Programmierung
  */
 public class MyDate {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        String input;
+    private String dates;
+    private int day;
+    private int month;
+    private int year;
 
-        System.out.print("Geben Sie ein Datum in der Form <Tag>.<Monat>.<Jahr> ein: ");
-        input = scanner.nextLine();
-
-        String[] dateInput = input.split(".");
-        String day = dateInput[0];
-        String month = dateInput[1];
-        String year = dateInput[2];
-
-        String date[] = {day, month, year};
-
-        for (int i = 0; i < date.length; i++) {
-            System.out.println(date[i]);
-        }
+    public MyDate (String dateInput){
+        this.dates = dateInput;
     }
+
+    String date[] = dates.split(".");
+    String day = date[0];
+
+
+//    region Getter
+
+    public int getDay(){
+        return day;
+    }
+    public int getMonth(){
+        return month;
+    }
+    public int getYear(){
+        return year;
+    }
+
+//        endregion
+
+
+
+
+
+
 
     /**
      * Formatierung des Datums
