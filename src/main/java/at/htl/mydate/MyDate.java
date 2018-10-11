@@ -38,34 +38,63 @@ public class MyDate {
         if (isValidDate) {
 
             if (year > year()) {
+
                 isValidDate = false;
+
             } else if (year == year() && month > month()) {
+
                 isValidDate = false;
+
             } else if (year == year() && month == month() && day > day()) {
+
                 isValidDate = false;
+
             } else if (month == 1 && day > 31) {
+
                 isValidDate = false;
+
             } else if ((month == 2 && day > 28 || (month == 2 && day > 29))) {
+
                 isValidDate = false;
+
             } else if (month == 3 && day > 31) {
+
                 isValidDate = false;
+
             } else if (month == 4 && day > 30) {
+
                 isValidDate = false;
+
             } else if (month == 5 && day > 31) {
+
                 isValidDate = false;
+
             } else if (month == 6 && day > 30) {
+
                 isValidDate = false;
+
             } else if (month == 7 && day > 31) {
+
                 isValidDate = false;
+
             } else if (month == 8 && day > 31) {
+
                 isValidDate = false;
+
             } else if (month == 9 && day > 30) {
+
                 isValidDate = false;
+
             } else if (month == 10 && day > 31) {
+
                 isValidDate = false;
+
             } else if (month == 11 && day > 30) {
+
                 isValidDate = false;
+
             } else if (month == 12 && day > 31) {
+
                 isValidDate = false;
             }
 

@@ -11,6 +11,10 @@ public class Main {
         String dateInput;
         int counter = 1;
 
+        System.out.println("Date-Manager\n" +
+                           "============" +
+                           "\n\n");
+
         System.out.print("Geben Sie das "+ counter +". Datum in der Form <Tag>.<Monat>.<Jahr> ein: ");
         dateInput = scanner.nextLine();
 
