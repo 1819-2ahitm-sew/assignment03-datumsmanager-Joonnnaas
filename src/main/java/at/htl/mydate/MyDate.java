@@ -21,6 +21,8 @@ public class MyDate {
 
         if (isValidDate(dateInput, day, month, year))
 
+            // 2018-11-04-HM: String dateParts = dateInput.split("\\.");
+            // => split muss dann nur einmal aufgerufen werden
             day = Integer.valueOf(dateInput.split("\\.")[0]);
         month = Integer.valueOf(dateInput.split("\\.")[1]);
         year = Integer.valueOf(dateInput.split("\\.")[2]);
@@ -33,7 +35,7 @@ public class MyDate {
         if (dateInput.split("\\.").length == 3){
 
 
-        isValidDate = day <= 1 && month >= 1 && month <= 12 && year >= 0;
+        isValidDate = day <= 1 && month >= 1 && month <= 12 && year >= 0; // 2018-11-04-HM: day >= 1
 
         if (isValidDate) {
 
@@ -100,7 +102,7 @@ public class MyDate {
 
         }
 
-    } else {
+    } else { // 2018-11-04-HM: unnötig, da enthaltener Code nur durchlaufen wird, wenn isValidDate == false
         isValidDate = false;
     }
         return isValidDate;
@@ -142,6 +144,7 @@ public class MyDate {
 
     }
 
+    // 2018-11-04-HM: Funktinonsname irreführend => getMonthName wäre besser
     private String getMonthNumber() {
         String monthString = "";
 
@@ -186,7 +189,7 @@ public class MyDate {
 
     public boolean isYoungerThan(MyDate other) {
 
-        return false;
+        return false; // 2018-11-04-HM: TODO
 
     }
     //region Getter

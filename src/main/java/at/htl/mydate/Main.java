@@ -18,10 +18,10 @@ public class Main {
         System.out.print("Geben Sie das "+ counter +". Datum in der Form <Tag>.<Monat>.<Jahr> ein: ");
         dateInput = scanner.nextLine();
 
-        MyDate myDate = new MyDate(dateInput);
+        MyDate myDate = new MyDate(dateInput); // 2018-11-04-HM: Exception bei Eingabe von "quit"
 
         while (!(dateInput.equals("quit"))) {
-
+            // 2018-11-04-HM: TODO
 
 
         }
